@@ -1,0 +1,39 @@
+:root {
+  --font-primary: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font-primary);
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--canvas, #090e18);
+  color-scheme: light dark;
+}
+
+/* Smooth scrolling is opt-out: it is disabled entirely when reduced motion is requested. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body,
+#root {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  isolation: isolate;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090e18" />
+    <meta name="description" content="Drishti DRP brand protection workspace" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("drishti-theme");
+          const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+          const theme = saved === "light" || saved === "dark" ? saved : systemPrefersLight ? "light" : "dark";
+          document.documentElement.dataset.theme = theme;
+          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "light" ? "#f4f6f9" : "#0d111b");
+        } catch {
+          const theme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+          document.documentElement.dataset.theme = theme;
+          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "light" ? "#f4f6f9" : "#0d111b");
+        }
+      })();
+    </script>
+    <title>Drishti DRP · Brand Protection</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

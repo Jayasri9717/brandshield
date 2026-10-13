@@ -1,0 +1,1 @@
+"""BrandShield Sentinel backend application."""

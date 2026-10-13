@@ -1,0 +1,18 @@
+[
+  "name_levenshtein",
+  "name_jaro_winkler",
+  "name_contains_brand",
+  "homoglyph_flag",
+  "icon_phash_dist",
+  "icon_embedding_cosine",
+  "desc_tfidf_cosine",
+  "shared_url_flag",
+  "dev_in_verified_list",
+  "dev_name_similarity",
+  "email_domain_match",
+  "dev_app_count",
+  "dev_account_age_days",
+  "rating",
+  "rating_count",
+  "scam_review_count"
+]

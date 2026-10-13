@@ -1,0 +1,61 @@
+{
+  "total_rows": 4466,
+  "columns": [
+    "account_id",
+    "handle",
+    "platform",
+    "bio_text",
+    "account_age_days",
+    "follower_count",
+    "is_verified",
+    "logo_similarity",
+    "handle_edit_score",
+    "giveaway_post_ratio",
+    "scam_dm_reports",
+    "url_similarity",
+    "brand_name",
+    "label",
+    "split"
+  ],
+  "label_distribution": {
+    "Fake": 2113,
+    "Legit": 1412,
+    "Monitor": 941
+  },
+  "brand_count": 26,
+  "brands": {
+    "unofficial": 508,
+    "PayPal": 193,
+    "Polygon": 175,
+    "Slack": 175,
+    "Apple": 173,
+    "Nike": 172,
+    "Sephora": 171,
+    "Spotify": 169,
+    "Microsoft": 167,
+    "Shopify": 166,
+    "Discord": 163,
+    "Google": 161,
+    "Revolut": 159,
+    "Coinbase": 157,
+    "Meta": 155,
+    "Ethereum": 154,
+    "Block": 153,
+    "Amazon": 151,
+    "Stripe": 149,
+    "Canva": 148,
+    "Tesla": 148,
+    "Adobe": 145,
+    "Netflix": 145,
+    "Zoom": 142,
+    "OpenAI": 134,
+    "Binance": 133
+  },
+  "platform_count": 8,
+  "split_sizes": {
+    "train": 3127,
+    "test": 670,
+    "val": 669
+  },
+  "official_count": 1412
+}
