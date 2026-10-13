@@ -29,4 +29,4 @@ Typography uses [Outfit](https://fonts.google.com/specimen/Outfit), loaded from 
 
 ## Motion system
 
-All durations and easings are CSS custom properties in `src/App.css` (`--duration-*`, `--ease-*`, `--transition-interactive`). Cards (`.panel`, `.stat-card`) share one hover pattern (scale, lift, border and glow) that can be tu
+All durations and easings are CSS custom properties in `src/App.css` (`--duration-*`, `--ease-*`, `--transition-interactive`). Cards (`.panel`, `.stat-card`) share one hover pattern (scale, lift, border and glow) that can be tuned per card with `--card-scale`, `--card-lift` and `--card-accent`. Zoom and lift only run on hover-capable pointers when `prefers-reduced-motion` is not set; smooth scrolling for in-page anchors (`#id` links, such as the skip link) is also disabled for reduced motion. A reusable `.media-card` overlay pattern is included for future thumbnail cards.
